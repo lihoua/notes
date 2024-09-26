@@ -121,6 +121,7 @@ tail -f ~/logs/rocketmqlogs/namesrv.log
 ```shell
 # 1.启动Broker
 nohup sh bin/mqbroker -n localhost:9876 &
+nohup sh mqbroker -n localhost:9876 autoCreateTopicEnable=true &
 # 2.查看启动日志
 tail -f ~/logs/rocketmqlogs/broker.log 
 ```
